@@ -49,7 +49,8 @@ pipeline {
                             echo err.getMessage()
                         }
                     }
-                }
+                   }
+           }
         }
         stage('Database docker build') {
             steps {
@@ -63,8 +64,7 @@ pipeline {
                     }
                 }
             }
-            
-            }
+
             //TODO("Lab 4 - Artifact Management"): clean local docker db image
             post {
                 always {
